@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/name"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/condition1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Linear Layout(Without Weight)"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#26BA27"
+        android:gravity="center"
+        android:text="BUTTON 1"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="BUTTON 2"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="BUTTON 3"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F81562"
+        android:gravity="center"
+        android:text="BUTTON 4"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp"
+        android:text="Linear Layout UI"
+        android:textColor="#09E416"
+        android:textSize="30sp"
+
+        android:textStyle="bold" />
+
+</LinearLayout>
