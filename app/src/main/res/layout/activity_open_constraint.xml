@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenConstraint">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#373535"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#E9E1E1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Open"
+            android:textColor="#E9E1E1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_person"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#E9E1E1" />
+
+        <ImageView
+            android:id="@+id/iv_diamond"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/baseline_diamond_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_add"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:tint="#E9E1E1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/option"
+        android:layout_width="match_parent"
+        android:layout_height="611dp"
+        android:background="#111"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <TextView
+            android:id="@+id/tv_places"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Places"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/im_schedule"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/baseline_schedule_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_places"
+            app:tint="#414145"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Recent"
+            android:textColor="#EDE1E1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/im_schedule"
+            app:layout_constraintTop_toBottomOf="@+id/tv_places"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/im_people"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/baseline_people_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_schedule"
+            app:tint="#414145"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:text="Shared with me"
+            android:textColor="#EDE1E1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/im_people"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/im_smartphone"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/baseline_smartphone_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_people"
+            app:tint="#414145"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:text="This device"
+            android:textColor="#EDE1E1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/im_smartphone"
+            app:layout_constraintTop_toBottomOf="@+id/im_people"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/im_cloude"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/baseline_cloud_queue_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_smartphone"
+            app:tint="#414145"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:text="Browse"
+            android:textColor="#EDE1E1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/im_cloude"
+            app:layout_constraintTop_toBottomOf="@+id/tv_device"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:text="Google Drive, SD card, and more..."
+            android:textColor="#414145"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/im_cloude"
+            app:layout_constraintTop_toBottomOf="@+id/tv_browse"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/im_pluse"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_cloude"
+            app:tint="#414145"
+            tools:ignore="ExtraText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_addplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Add a place"
+            android:textColor="#EDE1E1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/im_pluse"
+            app:layout_constraintTop_toBottomOf="@+id/tv_google"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:text="Connect to cloud storage"
+            android:textColor="#414145"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/im_pluse"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addplace"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#373535"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/im_schedule2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/baseline_schedule_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#C7C7D0" />
+
+        <TextView
+            android:id="@+id/tv_recent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent"
+            android:textColor="#C7C7D0"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_schedule2" />
+
+        <ImageView
+            android:id="@+id/im_people2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/baseline_people_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#C7C7D0" />
+
+        <TextView
+            android:id="@+id/tv_shared2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared"
+            android:textColor="#C7C7D0"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_people2"
+            tools:ignore="NotSibling" />
+
+        <ImageView
+            android:id="@+id/im_file"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/baseline_folder_open_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#C7C7D0" />
+
+        <TextView
+            android:id="@+id/tv_open2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="Open"
+            android:textColor="#C7C7D0"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_file"
+            tools:ignore="NotSibling" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
